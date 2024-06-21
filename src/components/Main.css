@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main styles */
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #04638F;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100vh; 
+  overflow-y: hidden; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Pizza container */
+.pizza-container {
+  position: absolute;
+  top: 20%; 
+  left: 35%;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: spin 10s linear infinite;
+}
+
+
+.pizza {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ingredients {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.ingredient {
+  position: absolute;
+  transition: transform 0.3s ease-in-out; 
+}
+
+.onion-1 > img {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+  height: 200px;
+}
+
+.onion-2 > img {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+.ingredient:hover {
+  animation: shatter 0.5s ease forwards; 
+}
+.olive-2>img{
+  -webkit-filter: invert(1);
+   filter: invert(1);
+}
+@keyframes shatter {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.ingredient > img {
+  height: 125px;
+  filter: blur(2px);
+}
+
+/* Title */
+.title {
+  font-size: 25.5rem; 
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 20px; 
+  transition: all 0.3s ease; 
+  white-space: nowrap; 
+  padding-bottom: 5px;
+}
+
+/* Order button */
+.order-button {
+  overflow: hidden;
+  top: 90%;
+  position: absolute;
+  padding-right: 10px;
+}
+
+.order-button > a {
+  display: block; 
+  width: 150px; 
+  padding: 10px;
+  border-radius: 40px; 
+  background-color: #fff;
+  color: #04638F;
+  text-decoration: none;
+  font-weight: 600;
+}

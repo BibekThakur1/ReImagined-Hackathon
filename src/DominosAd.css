@@ -1,0 +1,59 @@
+.dominos-ad {
+    background-color: #005fac;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header div {
+    margin: 0 10px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+  }
+  
+  .big-text {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .toppings img {
+    max-width: 30px;
+    margin: 0 5px;
+  }
+  
+  .pizza-image img {
+    max-width: 200px;
+  }
+  
+  .order-now {
+    background-color: white;
+    color: #005fac;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+  }

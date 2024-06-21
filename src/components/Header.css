@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 15px 10px; 
+  font-size: 1.7rem; /* 20px */
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #04638F;
+  position: absolute; 
+  top: 0;
+  z-index: 1; 
+}
+
+.header > div {
+  display: flex;
+  align-items: center;
+}
+
+.header > div > a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+}
+
+
+.domino-logo {
+  width: 210px; 
+  background-color: #fff;
+  border-radius: 40px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.domino-logo > a > img {
+  width: 100%;
+  height: auto;
+}
+
+/* Header.css */
+.corporate-enquiry {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.corporate-enquiry a {
+  background-color: #204a6f;
+  /* color: #062a43; */
+  padding: 10px 20px;
+  color: #204a6f;
+  font-size: 1.1rem;
+  letter-spacing: 0;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+.corporate-enquiry a:hover {
+  background-color: #5ab7d8; 
+}
+
+.corporate-enquiry svg {
+  margin-left: 10px; 
+  fill: #ffffff; 
+  border: 3px solid #04638F; 
+  padding: 5px; 
+  border-radius: 50%; 
+  box-sizing: border-box;
+  width: 30px; 
+  height: 30px; 
+  background-color: #04638F; 
+}
+
